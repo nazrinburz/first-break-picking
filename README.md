@@ -58,7 +58,7 @@ The final reported result is an **in-domain, shot-level test MAE of 13.20 ms** o
     └── analyze.ipynb            # Jupyter notebook for data analysis
 ```
 
-> **Note**: Historical 1D experiments and baseline results are retained in `1cnn/` and `findings/`.
+> **Note**: Historical 1D experiments, baseline results and LLO results are retained in `1cnn/`, `findings/` and `loo_results_1d/`, respectively.
 
 ## Data Processing
 
