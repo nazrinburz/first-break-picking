@@ -23,40 +23,42 @@ The project evolved through three approaches:
 The final reported result is an **in-domain, shot-level test MAE of 13.20 ms** on **56,195 labeled traces**.
 
 ## Project Structure
-data/
-├── Brunswick_orig_1500ms_V2.hdf5
-├── Halfmile3D_add_geom_sorted.hdf5
-├── Lalor_raw_z_1500ms_norp_geom_v3.hdf5
-└── preprocessed_Sudbury3D.hdf
 
-# Final 2D CNN (Primary)
-train_2d.py              # Train the final 2D CNN
-model_2d.py              # Gather2DCNN architecture
-gather_dataset_2d.py     # 2D gather dataset and windowing
-inference_2d.py          # Single-shot inference
+```text
+├── data/
+│   ├── Brunswick_orig_1500ms_V2.hdf5
+│   ├── Halfmile3D_add_geom_sorted.hdf5
+│   ├── Lalor_raw_z_1500ms_norp_geom_v3.hdf5
+│   └── preprocessed_Sudbury3D.hdf
+│
+├── Final 2D CNN (Primary)
+│   ├── train_2d.py              # Train the final 2D CNN
+│   ├── model_2d.py              # Gather2DCNN architecture
+│   ├── gather_dataset_2d.py     # 2D gather dataset and windowing
+│   └── inference_2d.py          # Single-shot inference
+│
+├── Historical 1D CNN & Multi-Asset Training
+│   ├── train.py                 # Train the historical 1D CNN
+│   ├── model.py                 # 1D CNN architecture
+│   ├── dataset.py               # 1D trace dataset loading
+│   ├── train_multi.py           # Multi-asset model training pipeline
+│   └── multi_dataset.py         # Multi-asset dataset handling
+│
+└── Baselines & Utilities
+    ├── baseline.py              # Classical STA/LTA + AIC baseline approach
+    ├── data_utils.py            # HDF5 loading and gather construction
+    ├── resample.py              # Trace resampling
+    ├── evaluate.py              # Evaluation utilities
+    ├── report.py                # Training reports
+    ├── seed_utils.py            # Reproducibility
+    ├── check_data.py            # Data validation and exploration
+    ├── make_synthetic_data.py   # Synthetic data generation
+    ├── run_demo.py              # Demonstration script
+    ├── visualize.py             # Plotting and visualization tools
+    └── analyze.ipynb            # Jupyter notebook for data analysis
+```
 
-# Historical 1D CNN & Multi-Asset Training
-train.py                 # Train the historical 1D CNN
-model.py                 # 1D CNN architecture
-dataset.py               # 1D trace dataset loading
-train_multi.py           # Multi-asset model training pipeline
-multi_dataset.py         # Multi-asset dataset handling
-
-# Baselines & Utilities
-baseline.py              # Classical STA/LTA + AIC baseline approach
-data_utils.py            # HDF5 loading and gather construction
-resample.py              # Trace resampling
-evaluate.py              # Evaluation utilities
-report.py                # Training reports
-seed_utils.py            # Reproducibility
-check_data.py            # Data validation and exploration
-make_synthetic_data.py   # Synthetic data generation
-run_demo.py              # Demonstration script
-visualize.py             # Plotting and visualization tools
-analyze.ipynb            # Jupyter notebook for data analysis
-notes_llo.txt            # Notes on Leave-One-Out experiments
-
-Historical 1D experiments and baseline results are retained in `1cnn/` and `findings/`.
+> **Note**: Historical 1D experiments and baseline results are retained in `1cnn/` and `findings/`.
 
 ## Data Processing
 
