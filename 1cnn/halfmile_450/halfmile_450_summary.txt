@@ -1,0 +1,37 @@
+file: data/Halfmile3D_add_geom_sorted.hdf5
+device: cuda
+epochs: 25  patience: 5  batch_size: 128  seed: 42  max_shots: 450
+train shots: 338   val shots: 67   test shots: 45
+stopped at epoch: 19
+avg epoch time: 35.2s   total training time: 668.1s
+final train MAE: 6.07 ms
+final val MAE:   8.88 ms
+best val MAE:    6.98 ms (epoch 14)
+test MAE:        6.91 ms  ← held-out, not used during training
+
+using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (device=cuda)
+seed=42  epochs=25  patience=5  batch_size=128  lr=0.001  val_frac=0.15  test_frac=0.1
+loading 450 random shots (716,902 traces) out of 1,099,559 total
+epoch  1/25  train MAE= 45.17 ms  val MAE= 36.24 ms  (35.7s)
+epoch  2/25  train MAE= 30.03 ms  val MAE= 33.43 ms  (34.2s)
+epoch  3/25  train MAE= 24.57 ms  val MAE= 26.62 ms  (34.1s)
+epoch  4/25  train MAE= 21.32 ms  val MAE= 23.23 ms  (34.9s)
+epoch  5/25  train MAE= 18.60 ms  val MAE= 18.56 ms  (35.0s)
+epoch  6/25  train MAE= 15.77 ms  val MAE= 16.78 ms  (34.6s)
+epoch  7/25  train MAE= 12.60 ms  val MAE= 13.88 ms  (35.1s)
+epoch  8/25  train MAE=  9.33 ms  val MAE=  8.86 ms  (35.7s)
+epoch  9/25  train MAE=  7.14 ms  val MAE=  7.54 ms  (36.6s)
+epoch 10/25  train MAE=  6.56 ms  val MAE=  7.66 ms  (35.0s)
+epoch 11/25  train MAE=  6.39 ms  val MAE= 10.35 ms  (34.9s)
+epoch 12/25  train MAE=  6.32 ms  val MAE=  9.51 ms  (34.5s)
+epoch 13/25  train MAE=  6.27 ms  val MAE=  7.88 ms  (33.8s)
+epoch 14/25  train MAE=  6.22 ms  val MAE=  6.98 ms  (35.0s)
+epoch 15/25  train MAE=  6.19 ms  val MAE=  7.07 ms  (34.9s)
+epoch 16/25  train MAE=  6.16 ms  val MAE=  9.55 ms  (34.6s)
+epoch 17/25  train MAE=  6.14 ms  val MAE=  7.44 ms  (34.7s)
+epoch 18/25  train MAE=  6.10 ms  val MAE=  8.00 ms  (40.4s)
+epoch 19/25  train MAE=  6.07 ms  val MAE=  8.88 ms  (34.5s)
+early stopping at epoch 19 (no improvement for 5 epochs)
+restored best weights (val MAE=6.98 ms, epoch 14)
+saved best weights to halfmile_450.pt
+saved halfmile_450_curve.png and halfmile_450_summary.txt

@@ -1,0 +1,42 @@
+file: data/preprocessed_Sudbury3D.hdf
+device: cuda
+epochs: 25  patience: 5  batch_size: 128  seed: 42  max_shots: 450
+train shots: 331   val shots: 66   test shots: 44
+stopped at epoch: 25
+avg epoch time: 5.8s   total training time: 144.2s
+final train MAE: 10.04 ms
+final val MAE:   10.87 ms
+best val MAE:    10.87 ms (epoch 25)
+test MAE:        10.84 ms  ← held-out, not used during training
+
+using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (device=cuda)
+seed=42  epochs=25  patience=5  batch_size=128  lr=0.001  val_frac=0.15  test_frac=0.1
+loading 450 random shots (788,206 traces) out of 1,810,220 total
+epoch  1/25  train MAE= 38.78 ms  val MAE= 24.44 ms  (8.5s)
+epoch  2/25  train MAE= 24.09 ms  val MAE= 20.36 ms  (6.6s)
+epoch  3/25  train MAE= 21.16 ms  val MAE= 18.58 ms  (5.1s)
+epoch  4/25  train MAE= 19.79 ms  val MAE= 17.97 ms  (5.1s)
+epoch  5/25  train MAE= 18.78 ms  val MAE= 17.03 ms  (4.8s)
+epoch  6/25  train MAE= 17.90 ms  val MAE= 16.60 ms  (4.9s)
+epoch  7/25  train MAE= 17.24 ms  val MAE= 16.37 ms  (5.2s)
+epoch  8/25  train MAE= 16.52 ms  val MAE= 15.60 ms  (4.9s)
+epoch  9/25  train MAE= 15.95 ms  val MAE= 15.30 ms  (5.0s)
+epoch 10/25  train MAE= 15.44 ms  val MAE= 15.23 ms  (5.2s)
+epoch 11/25  train MAE= 14.89 ms  val MAE= 14.59 ms  (5.0s)
+epoch 12/25  train MAE= 14.62 ms  val MAE= 14.45 ms  (5.0s)
+epoch 13/25  train MAE= 14.07 ms  val MAE= 14.40 ms  (5.0s)
+epoch 14/25  train MAE= 13.73 ms  val MAE= 14.03 ms  (5.5s)
+epoch 15/25  train MAE= 13.34 ms  val MAE= 13.28 ms  (5.6s)
+epoch 16/25  train MAE= 12.95 ms  val MAE= 13.87 ms  (5.3s)
+epoch 17/25  train MAE= 12.55 ms  val MAE= 12.95 ms  (5.3s)
+epoch 18/25  train MAE= 12.33 ms  val MAE= 12.67 ms  (7.7s)
+epoch 19/25  train MAE= 11.93 ms  val MAE= 12.34 ms  (8.0s)
+epoch 20/25  train MAE= 11.58 ms  val MAE= 13.81 ms  (8.0s)
+epoch 21/25  train MAE= 11.32 ms  val MAE= 12.17 ms  (6.3s)
+epoch 22/25  train MAE= 10.96 ms  val MAE= 11.57 ms  (5.4s)
+epoch 23/25  train MAE= 10.60 ms  val MAE= 11.47 ms  (5.1s)
+epoch 24/25  train MAE= 10.29 ms  val MAE= 11.18 ms  (6.2s)
+epoch 25/25  train MAE= 10.04 ms  val MAE= 10.87 ms  (5.4s)
+restored best weights (val MAE=10.87 ms, epoch 25)
+saved best weights to sudbury_450.pt
+saved sudbury_450_curve.png and sudbury_450_summary.txt

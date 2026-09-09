@@ -1,0 +1,42 @@
+file: data/Lalor_raw_z_1500ms_norp_geom_v3.hdf5
+device: cuda
+epochs: 25  patience: 5  batch_size: 128  seed: 42  max_shots: 450
+train shots: 338   val shots: 67   test shots: 45
+stopped at epoch: 25
+avg epoch time: 38.5s   total training time: 961.8s
+final train MAE: 5.47 ms
+final val MAE:   5.52 ms
+best val MAE:    5.49 ms (epoch 24)
+test MAE:        5.40 ms  ← held-out, not used during training
+
+using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (device=cuda)
+seed=42  epochs=25  patience=5  batch_size=128  lr=0.001  val_frac=0.15  test_frac=0.1
+loading 450 random shots (1,204,781 traces) out of 2,424,923 total
+epoch  1/25  train MAE= 25.25 ms  val MAE= 15.48 ms  (53.5s)
+epoch  2/25  train MAE= 16.62 ms  val MAE= 14.57 ms  (45.0s)
+epoch  3/25  train MAE= 15.24 ms  val MAE= 13.06 ms  (45.6s)
+epoch  4/25  train MAE= 14.39 ms  val MAE= 12.48 ms  (47.0s)
+epoch  5/25  train MAE= 13.65 ms  val MAE= 11.93 ms  (46.8s)
+epoch  6/25  train MAE= 13.01 ms  val MAE= 11.41 ms  (36.7s)
+epoch  7/25  train MAE= 12.37 ms  val MAE= 10.79 ms  (36.6s)
+epoch  8/25  train MAE= 11.60 ms  val MAE= 10.13 ms  (36.1s)
+epoch  9/25  train MAE= 10.74 ms  val MAE=  9.20 ms  (36.2s)
+epoch 10/25  train MAE=  9.75 ms  val MAE=  8.91 ms  (36.8s)
+epoch 11/25  train MAE=  8.69 ms  val MAE=  7.69 ms  (36.0s)
+epoch 12/25  train MAE=  7.65 ms  val MAE=  6.72 ms  (36.6s)
+epoch 13/25  train MAE=  6.75 ms  val MAE=  6.16 ms  (36.3s)
+epoch 14/25  train MAE=  6.19 ms  val MAE=  5.88 ms  (38.0s)
+epoch 15/25  train MAE=  5.88 ms  val MAE=  5.72 ms  (36.7s)
+epoch 16/25  train MAE=  5.75 ms  val MAE=  5.99 ms  (35.8s)
+epoch 17/25  train MAE=  5.69 ms  val MAE=  5.59 ms  (35.8s)
+epoch 18/25  train MAE=  5.66 ms  val MAE=  5.60 ms  (36.2s)
+epoch 19/25  train MAE=  5.61 ms  val MAE=  5.54 ms  (36.1s)
+epoch 20/25  train MAE=  5.59 ms  val MAE=  5.55 ms  (34.8s)
+epoch 21/25  train MAE=  5.56 ms  val MAE=  5.71 ms  (35.5s)
+epoch 22/25  train MAE=  5.54 ms  val MAE=  5.55 ms  (35.9s)
+epoch 23/25  train MAE=  5.51 ms  val MAE=  5.77 ms  (35.7s)
+epoch 24/25  train MAE=  5.50 ms  val MAE=  5.49 ms  (37.7s)
+epoch 25/25  train MAE=  5.47 ms  val MAE=  5.52 ms  (34.4s)
+restored best weights (val MAE=5.49 ms, epoch 24)
+saved best weights to lalor_450.pt
+saved lalor_450_curve.png and lalor_450_summary.txt

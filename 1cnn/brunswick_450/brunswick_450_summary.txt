@@ -1,0 +1,42 @@
+file: data/Brunswick_orig_1500ms_V2.hdf5
+device: cuda
+epochs: 25  patience: 5  batch_size: 128  seed: 42  max_shots: 450
+train shots: 338   val shots: 67   test shots: 45
+stopped at epoch: 25
+avg epoch time: 63.6s   total training time: 1591.2s
+final train MAE: 6.23 ms
+final val MAE:   6.26 ms
+best val MAE:    6.26 ms (epoch 25)
+test MAE:        6.27 ms  ← held-out, not used during training
+
+using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (device=cuda)
+seed=42  epochs=25  patience=5  batch_size=128  lr=0.001  val_frac=0.15  test_frac=0.1
+loading 450 random shots (1,313,714 traces) out of 4,496,540 total
+epoch  1/25  train MAE= 50.96 ms  val MAE= 35.22 ms  (75.9s)
+epoch  2/25  train MAE= 31.46 ms  val MAE= 28.88 ms  (75.7s)
+epoch  3/25  train MAE= 26.51 ms  val MAE= 24.99 ms  (78.4s)
+epoch  4/25  train MAE= 23.13 ms  val MAE= 22.49 ms  (81.9s)
+epoch  5/25  train MAE= 19.71 ms  val MAE= 19.99 ms  (64.2s)
+epoch  6/25  train MAE= 15.62 ms  val MAE= 13.63 ms  (58.4s)
+epoch  7/25  train MAE= 11.04 ms  val MAE=  9.38 ms  (57.5s)
+epoch  8/25  train MAE=  7.93 ms  val MAE=  7.24 ms  (57.2s)
+epoch  9/25  train MAE=  7.15 ms  val MAE=  6.97 ms  (57.6s)
+epoch 10/25  train MAE=  6.96 ms  val MAE=  7.09 ms  (58.3s)
+epoch 11/25  train MAE=  6.85 ms  val MAE=  7.15 ms  (58.0s)
+epoch 12/25  train MAE=  6.74 ms  val MAE=  7.00 ms  (69.2s)
+epoch 13/25  train MAE=  6.66 ms  val MAE=  6.89 ms  (58.7s)
+epoch 14/25  train MAE=  6.58 ms  val MAE=  6.50 ms  (57.9s)
+epoch 15/25  train MAE=  6.52 ms  val MAE=  6.87 ms  (59.6s)
+epoch 16/25  train MAE=  6.50 ms  val MAE=  6.50 ms  (62.4s)
+epoch 17/25  train MAE=  6.44 ms  val MAE=  6.49 ms  (63.6s)
+epoch 18/25  train MAE=  6.41 ms  val MAE=  6.44 ms  (63.0s)
+epoch 19/25  train MAE=  6.38 ms  val MAE=  6.70 ms  (63.1s)
+epoch 20/25  train MAE=  6.35 ms  val MAE=  6.44 ms  (62.3s)
+epoch 21/25  train MAE=  6.33 ms  val MAE=  6.31 ms  (61.3s)
+epoch 22/25  train MAE=  6.32 ms  val MAE=  6.33 ms  (60.8s)
+epoch 23/25  train MAE=  6.29 ms  val MAE=  6.40 ms  (61.8s)
+epoch 24/25  train MAE=  6.26 ms  val MAE=  6.43 ms  (61.8s)
+epoch 25/25  train MAE=  6.23 ms  val MAE=  6.26 ms  (62.5s)
+restored best weights (val MAE=6.26 ms, epoch 25)
+saved best weights to brunswick_450.pt
+saved brunswick_450_curve.png and brunswick_450_summary.txt

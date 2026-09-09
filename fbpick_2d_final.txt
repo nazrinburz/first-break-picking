@@ -1,0 +1,26 @@
+assets: ['brunswick', 'halfmile', 'lalor', 'sudbury']
+mode: in_domain   epochs: 20   patience: 5   seed: 42   max_shots: 100   batch_size: 32
+target_dt_ms: 2.0   target_n_samples: 750
+max_traces: 64   trace_stride: 64
+
+device: cuda   best epoch: 16   best val MAE: 16.09 ms   avg epoch time: 73.7s
+
+SHOT-LEVEL SPLIT:
+  brunswick: train=75 shots, val=15 shots, test=10 shots
+  halfmile: train=75 shots, val=15 shots, test=10 shots
+  lalor: train=75 shots, val=15 shots, test=10 shots
+  sudbury: train=50 shots, val=9 shots, test=6 shots
+
+pooled in-domain validation  (n=75964)
+  MAE:    16.09 ms
+  median: 8.42 ms
+  within  4 ms:  26.7%
+  within  8 ms:  48.2%
+  within 16 ms:  72.3%
+
+pooled in-domain test  (n=56195)
+  MAE:    13.20 ms
+  median: 7.69 ms
+  within  4 ms:  28.6%
+  within  8 ms:  51.5%
+  within 16 ms:  76.2%

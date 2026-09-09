@@ -1,0 +1,38 @@
+assets: ['brunswick', 'halfmile', 'lalor', 'sudbury']
+mode: leave_one_out   epochs: 25   patience: 5   seed: 42   max_shots: 200   batch_size: 128
+
+--- held out: brunswick ---
+device: cuda   stopped epoch: 25   best val MAE: 6.55 ms   avg epoch time: 108.5s
+held-out asset: brunswick  (n=486128)
+  MAE:    108.64 ms
+  median: 78.55 ms
+  within  4 ms:   1.9%
+  within  8 ms:   3.5%
+  within 16 ms:   7.1%
+
+--- held out: halfmile ---
+device: cuda   stopped epoch: 25   best val MAE: 7.38 ms   avg epoch time: 90.4s
+held-out asset: halfmile  (n=288479)
+  MAE:    131.21 ms
+  median: 109.23 ms
+  within  4 ms:   1.1%
+  within  8 ms:   2.2%
+  within 16 ms:   4.8%
+
+--- held out: lalor ---
+device: cuda   stopped epoch: 25   best val MAE: 21.10 ms   avg epoch time: 57.6s
+held-out asset: lalor  (n=261117)
+  MAE:    20.73 ms
+  median: 15.74 ms
+  within  4 ms:  13.5%
+  within  8 ms:  27.1%
+  within 16 ms:  50.6%
+
+--- held out: sudbury ---
+device: cuda   stopped epoch: 25   best val MAE: 19.31 ms   avg epoch time: 65.3s
+held-out asset: sudbury  (n=39564)
+  MAE:    18.34 ms
+  median: 12.04 ms
+  within  4 ms:  18.2%
+  within  8 ms:  35.2%
+  within 16 ms:  61.9%
